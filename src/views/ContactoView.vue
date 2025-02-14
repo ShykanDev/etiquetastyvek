@@ -139,7 +139,7 @@
 
 <script lang="ts" setup>
 import MainLayout from '@/layouts/MainLayout.vue';
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import emailjs from '@emailjs/browser';
 import 'notyf/notyf.min.css'; // for React, Vue and Svelte
 
