@@ -92,7 +92,7 @@
 
         <div class="flex flex-wrap items-center justify-center md:flex-nowrap">
             <div class="p-6 bg-white rounded-lg shadow-md">
-                <img src="../assets/img/Elefantes.png" alt="" class="w-full">
+                <img src="../assets/img/Elefantes.png" alt="" class="w-[380px]">
             </div>
             <div class="p-6 bg-white rounded-lg shadow-md">
                 <img src="../assets/img/iso.png" alt="" class="w-40">

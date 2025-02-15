@@ -1,10 +1,19 @@
 <template>
   <!-- header -->
   <header class="sticky top-0 z-50 w-full text-white border-b-2 bg-slate-900 border-b-white">
-    <div class="flex flex-col items-center justify-between w-full p-4 py-6 font-poppins md:flex-row">
-      <div class="flex items-center gap-1">
-        <img src="../assets/img/sslLogoV3.png" class="w-7" alt="">
-        <RouterLink translate="no" :to="{ name: 'home' }" class="text-lg font-bold"><span v-html="currentDomain"></span></RouterLink>
+    <div class="flex flex-col items-center justify-between w-full p-4 py-6 font-poppins md:flex-row ">
+      <div class="absolute flex items-center justify-center w-full gap-3 bottom-1 md:justify-start md:pl-20">
+          <img src="../assets/img/mx.svg" class="w-7 animate-fade-right animate-delay-0" alt="">
+          <img src="../assets/img/us.svg" class="w-7 animate-fade-right animate-delay-75" alt="">
+          <img src="../assets/img/in.svg" class="w-7 animate-fade-right animate-delay-100" alt="">
+          <img src="../assets/img/cn.svg" class="w-7 animate-fade-right animate-delay-200" alt="">
+        </div>
+      <div class="flex flex-col items-center gap-1 ">
+        <div class="flex items-center gap-3">
+          <img src="../assets/img/sslLogoV3.png" class="w-7" alt="">
+          <RouterLink translate="no" :to="{ name: 'home' }" class="text-lg font-bold"><span v-html="currentDomain"></span></RouterLink>
+        </div>
+
       </div>
       <div class="flex flex-wrap space-x-6 text-lg md:flex-nowrap md:mr-40 md:flex justify-evenly md:justify-normal">
         <RouterLink  :to="{ name: 'home' }"
