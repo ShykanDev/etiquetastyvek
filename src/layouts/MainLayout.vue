@@ -1,8 +1,8 @@
 <template>
   <!-- header -->
-  <header class="sticky top-0 z-50 w-full text-white border-b-2 bg-slate-900 border-b-white">
+  <header class="sticky top-0 z-50 w-full overflow-hidden text-white border-b-2 bg-slate-900 border-b-white">
     <div class="flex flex-col items-center justify-between w-full p-4 py-6 font-poppins md:flex-row ">
-      <div class="absolute flex items-center justify-center w-full gap-3 bottom-1 md:justify-start md:pl-20">
+      <div class="absolute flex items-center justify-center w-full gap-3 overflow-hidden bottom-1 md:justify-start md:pl-20">
           <img src="../assets/img/mx.svg" class="w-7 animate-fade-right animate-delay-0" alt="">
           <img src="../assets/img/us.svg" class="w-7 animate-fade-right animate-delay-75" alt="">
           <img src="../assets/img/in.svg" class="w-7 animate-fade-right animate-delay-100" alt="">
