@@ -63,7 +63,7 @@
                 <h3 class="text-xl font-semibold">Etiqueta Circular para Joyería Tyvek</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-16">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
               </div>
             </div>
 
@@ -127,7 +127,7 @@
                 <h3 class="text-xl font-semibold">Etiqueta Cuadrada para Joyería Tyvek</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-16">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
               </div>
             </div>
 
@@ -190,7 +190,7 @@
                 <h3 class="text-xl font-semibold">Etiqueta Cola de Rata para Joyería Tyvek</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-16">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
               </div>
             </div>
 
@@ -253,7 +253,7 @@
                 <h3 class="text-xl font-semibold">Etiqueta Colgante Circular</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-16">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
               </div>
             </div>
 
@@ -312,7 +312,7 @@
                 <h3 class="text-xl font-semibold">Etiqueta Colgante Cuadrada</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-16">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
               </div>
             </div>
 
@@ -371,7 +371,7 @@
                 <h3 class="text-xl font-semibold">Etiqueta Colgante Rectangular</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-16">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
               </div>
             </div>
 
