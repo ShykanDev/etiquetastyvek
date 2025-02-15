@@ -1,15 +1,19 @@
 <template>
   <MainLayout>
     <template #main>
-      <section class="py-8 bg-gray-50">
-        <div class="container flex flex-col-reverse items-center px-4 mx-auto overflow-hidden md:flex-row font-poppins">
+      <section class=" bg-gray-50">
+        <div class="container flex flex-col-reverse items-center px-4 pb-4 mx-auto overflow-hidden md:flex-row font-poppins">
           <!-- Texto -->
           <div class="w-full px-4 md:w-1/2 animate-fade-right">
             <div class="flex items-center gap-4">
-              <h2 class="text-2xl font-semibold text-gray-800">Familia Elefante </h2>
+              <h2 class="text-2xl italic font-bold text-rose-800">Familia Elefante </h2>
               <!-- Se muestra en mobile -->
-              <img class="block w-24 my-4" loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Logo Tyvek">
+              <img class="block w-32 my-4" loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Logo Tyvek">
+              <!-- <div class="flex flex-col items-start gap-4"> -->
+              <!-- <img src="../assets/img/4_7StarsMercadoLibreRating.PNG" class="border rounded-xl border-sky-700" alt=""> -->
+              <!-- <img src="../assets/img/4_7StarsMercadoLibreRating.PNG" class="border rounded-xl border-emerald-400" alt=""> -->
             </div>
+
             <h1 class="mt-4 text-4xl font-bold text-gray-900">
               Etiquetas Especiales para Joyería y usos Diversos
             </h1>
@@ -18,58 +22,92 @@
             </p>
             <img class="mt-4 animate-fade-up animate-delay-100" loading="lazy" src="../assets/img/Elefantes.png"
               alt="Elefantes">
+              <!-- Mercado libre -->
+            <div class="flex items-center gap-4 mt-5">
+              <img src="../assets/img/4_7StarsMercadoLibreRating.PNG" class="border rounded-xl border-sky-700" alt="">
+              <img src="../assets/img/MercadoLiderCapture.PNG" class="border rounded-xl border-emerald-400 animate-fade-down" alt="">
+            </div>
           </div>
           <!-- Imagen de fondo -->
           <div class="w-full px-4 md:w-1/2">
             <img class="w-full animate-fade-left" loading="lazy" src="../assets/img/fondo_etiquetas.png"
               alt="Fondo Etiquetas">
           </div>
+
         </div>
       </section>
-      <!-- PUBLICIDAD -->
-      <section class="py-8 mx-4 border border-gray-400 bg-slate-200">
-        <div class="container px-4 mx-auto">
-          <p class="mb-4 text-sm tracking-widest text-center text-gray-500 uppercase">Publicidad</p>
-          <div class="space-y-8">
-            <!-- Publicidad 1 -->
-            <div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow md:flex-row">
-              <div class="md:w-1/2">
-                <h3 class="text-2xl font-semibold text-gray-800">Hilera de Tungsteno</h3>
-                <p class="mt-2 text-gray-700">
-                  Hilera para Joyeros de Tungsteno, excelente calidad y precios
-                </p>
-                <div class="mt-4">
-                  <a href="http://hilerajoyeria.com" target="_blank" rel="noopener noreferrer"
-                    class="px-4 py-2 text-white transition bg-blue-600 rounded hover:bg-blue-700">
-                    Ir al Sitio
-                  </a>
-                </div>
-              </div>
-              <div class="mt-4 md:w-1/2 md:mt-0">
-                <img class="w-full" loading="lazy" src="../assets/img/HileraTungsteno.png" alt="Hilera de Tungsteno">
-              </div>
-            </div>
-            <!-- Publicidad 2 -->
-            <div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow md:flex-row">
-              <div class="md:w-1/2">
-                <h3 class="text-2xl font-semibold text-gray-800">Arco Alemán</h3>
-                <p class="mt-2 text-gray-700">
-                  Arcos y seguetas premium para diferentes usos y profesiones
-                </p>
-                <div class="mt-4">
-                  <a href="http://arcosegueta.com" target="_blank" rel="noopener noreferrer"
-                    class="px-4 py-2 text-white transition bg-blue-600 rounded hover:bg-blue-700">
-                    Ir al Sitio
-                  </a>
-                </div>
-              </div>
-              <div class="mt-4 md:w-1/2 md:mt-0">
-                <img class="w-3/4" loading="lazy" src="../assets/img/ArcoSinFondo.png" alt="Arco Alemán">
-              </div>
-            </div>
-          </div>
+   <!-- PUBLICIDAD -->
+<section class="py-6 mx-2 border border-gray-400 bg-slate-200">
+  <div class="container px-2 mx-auto">
+    <p class="mb-4 text-sm tracking-widest text-center text-gray-500 uppercase">Publicidad</p>
+    <div class="grid gap-4 md:grid-cols-2">
+      <!-- Publicidad 1 -->
+      <div class="flex flex-col p-4 transition-shadow bg-gray-100 rounded-lg shadow-lg hover:shadow-xl">
+        <div class="flex-1">
+          <h3 class="text-lg font-semibold text-gray-800">Hilera de Tungsteno</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Hilera para Joyeros de Tungsteno, excelente calidad y precios
+          </p>
         </div>
-      </section>
+        <div class="flex items-center justify-center h-48 mt-4">
+          <img class="max-w-full max-h-full" loading="lazy"
+               src="../assets/img/HileraTungsteno.png" alt="Hilera de Tungsteno">
+        </div>
+        <div class="mt-4 text-center">
+          <a href="http://hilerajoyeria.com" target="_blank" rel="noopener noreferrer"
+            class="inline-block px-4 py-2 text-sm text-white transition bg-blue-600 rounded hover:bg-blue-700">
+            Ir al Sitio
+          </a>
+        </div>
+      </div>
+
+      <!-- Publicidad 2 -->
+      <div class="flex flex-col p-4 transition-shadow bg-gray-100 rounded-lg shadow-lg hover:shadow-xl">
+        <div class="flex-1">
+          <h3 class="text-lg font-semibold text-gray-800">Arco Alemán</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Arcos y seguetas premium para diferentes usos y profesiones
+          </p>
+        </div>
+        <div class="flex items-center justify-center h-48 mt-4">
+          <img class="max-w-full max-h-full" loading="lazy"
+               src="../assets/img/ArcoSinFondo.png" alt="Arco Alemán">
+        </div>
+        <div class="mt-4 text-center">
+          <a href="http://arcosegueta.com" target="_blank" rel="noopener noreferrer"
+            class="inline-block px-4 py-2 text-sm text-white transition bg-blue-600 rounded hover:bg-blue-700">
+            Ir al Sitio
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN VIDEO -->
+<section class="py-12 bg-gray-50">
+  <div class="container max-w-full px-4 mx-auto">
+    <div class="max-w-full mx-auto">
+      <!-- Encabezado con iconos -->
+      <div class="mb-8 text-center">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <i class="text-2xl text-blue-600 fas fa-tags"></i>
+          <i class="text-xl text-gray-400 fas fa-plus"></i>
+          <i class="text-2xl text-blue-600 fas fa-video"></i>
+        </div>
+        <h2 class="text-3xl font-bold text-gray-800 md:text-4xl">
+          Usos de las Etiquetas Tyvek<sup class="text-xs">®</sup> de Dupont
+        </h2>
+        <p class="mt-2 text-gray-600">Descubra sus aplicaciones profesionales</p>
+      </div>
+
+      <!-- Contenedor responsive del video -->
+      <div class="overflow-hidden bg-white rounded-lg shadow-lg aspect-video">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/9ZFYeVKMmyw?si=IAlD_p6DlyTQd3-5&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- ETIQUETAS CON TYVEK -->
       <section class="py-12 bg-gray-50">
@@ -118,17 +156,17 @@
       </section>
 
       <!-- ¿QUÉ ES TYVEK? -->
-      <section class="py-12 bg-white">
+      <section class="py-12 bg-slate-800">
         <div class="container px-4 mx-auto">
-          <h2 class="text-3xl font-bold text-center text-gray-800">¿Qué es Tyvek de Dupont?</h2>
-          <p class="mt-4 text-center text-gray-700">
+          <h2 class="text-3xl font-bold text-center text-white">¿Qué es Tyvek de Dupont?</h2>
+          <p class="mt-4 text-center text-white">
             Conozca esta tecnología en fibras sintéticas que aporta múltiples beneficios a diversas industrias,
             especialmente en etiquetas para joyería.
           </p>
           <div class="flex flex-col items-center mt-10 md:flex-row">
             <div class="text-center md:w-3/5">
-              <img class="mx-auto max-h-16" loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Logo Tyvek">
-              <p class="mt-4 text-gray-700">
+              <img class="box-border w-64 p-3 mx-auto bg-white rounded-lg" loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Logo Tyvek">
+              <p class="mt-4 text-white">
                 Fibra sintética termoplástica resistente a la humedad, liviana, transpirable y durable. Resistente al
                 agua, abrasión y bacterias.
               </p>
@@ -141,37 +179,37 @@
       </section>
 
       <!-- ¿POR QUÉ TYVEK ES MEJOR? -->
-      <section class="py-12 bg-slate-800 font-poppins">
+      <section class="py-12 bg-white font-poppins">
         <div class="container px-4 mx-auto">
-          <h2 class="text-3xl font-bold text-center text-white">¿Por qué Tyvek es mejor?</h2>
-          <p class="mt-4 text-center text-white">
+          <h2 class="text-3xl font-bold text-center text-gray-800">¿Por qué Tyvek es mejor?</h2>
+          <p class="mt-4 text-center text-gray-700">
             Conoce algunas diferencias entre las etiquetas Tyvek de Dupont y otras alternativas.
           </p>
           <div class="flex justify-center mt-6">
-            <img class="box-border w-32 p-2 bg-white rounded-md" loading="lazy" src="../assets/img/Logo-Tyvek.png"
+            <img class="box-border w-64 p-2 bg-white rounded-md" loading="lazy" src="../assets/img/Logo-Tyvek.png"
               alt="Logo Tyvek">
           </div>
           <div class="grid gap-8 mt-10 md:grid-cols-3">
             <!-- Diferencia 1 -->
-            <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow">
+            <div class="flex flex-col items-center p-2 bg-white rounded-lg shadow">
               <p class="text-center text-gray-600">
                 El material es sintético, formando una secuencia de fibras que crea un tejido termoplástico.
               </p>
               <img class="mt-4" loading="lazy" src="../assets/img/fibras-etiquetas.png" alt="Fibras de Tyvek">
             </div>
             <!-- Diferencia 2 -->
-            <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow">
+            <div class="flex flex-col items-center p-2 bg-white rounded-lg shadow">
               <p class="text-center text-gray-600">
                 La etiqueta no contiene adhesivo en el centro, evitando manchas y daños.
               </p>
-              <img class="mt-4" loading="lazy" src="../assets/img/anillo-etiqueta2.png" alt="Sin adhesivo">
+              <img class="w-full mt-4" loading="lazy" src="../assets/img/anillo-etiqueta2.png" alt="Sin adhesivo">
             </div>
             <!-- Diferencia 3 -->
-            <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow">
+            <div class="flex flex-col items-center p-2 bg-white rounded-lg shadow">
               <p class="text-center text-gray-600">
                 Resistente a la humedad, al vapor y a limpiezas ultrasónicas.
               </p>
-              <img class="mt-4" loading="lazy" src="../assets/img/etiqueta-mojada.png" alt="Etiqueta mojada">
+              <img class="w-full mt-4" loading="lazy" src="../assets/img/etiqueta-mojada.png" alt="Etiqueta mojada">
             </div>
           </div>
           <div class="mt-12 text-center">
@@ -221,7 +259,7 @@
             <!-- Uso: Joyería -->
             <div class="flex flex-col items-center p-6 rounded-lg shadow bg-gray-50">
               <h3 class="mb-2 text-xl font-semibold text-gray-800">Para joyería</h3>
-              <img class="object-contain w-40 rounded-sm " loading="lazy" src="../assets/img/joyeria.png" alt="Joyería">
+              <img class="object-contain rounded-2xl w-80 " loading="lazy" src="../assets/img/joyeria.png" alt="Joyería">
               <p class="mt-4 text-center text-gray-600">
                 Cuida tus joyas de manchas y mantenlas siempre presentables.
               </p>
@@ -229,7 +267,7 @@
             <!-- Uso: Inventarios -->
             <div class="flex flex-col items-center p-6 rounded-lg shadow bg-gray-50">
               <h3 class="mb-2 text-xl font-semibold text-gray-800">Para inventarios</h3>
-              <img class="object-contain w-40 rounded-sm " loading="lazy" src="../assets/img/productos.png"
+              <img class="object-contain rounded-2xl w-80 " loading="lazy" src="../assets/img/productos.png"
                 alt="Inventarios">
               <p class="mt-4 text-center text-gray-600">
                 Marca tus productos con etiquetas distintivas en diferentes colores y formas.
@@ -238,7 +276,7 @@
             <!-- Uso: Oficinas -->
             <div class="flex flex-col items-center p-6 rounded-lg shadow bg-gray-50">
               <h3 class="mb-2 text-xl font-semibold text-gray-800">Para oficinas</h3>
-              <img class="object-contain w-40 rounded-sm " loading="lazy" src="../assets/img/oficina.png"
+              <img class="object-contain rounded-2xl w-80 " loading="lazy" src="../assets/img/oficina.png"
                 alt="Oficinas">
               <p class="mt-4 text-center text-gray-600">
                 Identifica documentos y carpetas de manera fácil y ordenada.
@@ -247,7 +285,7 @@
             <!-- Uso: Escolares -->
             <div class="flex flex-col items-center p-6 rounded-lg shadow bg-gray-50">
               <h3 class="mb-2 text-xl font-semibold text-gray-800">Para escolares</h3>
-              <img class="object-contain w-40 rounded-sm" loading="lazy" src="../assets/img/escuela.png"
+              <img class="object-contain rounded-2xl w-80" loading="lazy" src="../assets/img/escuela.png"
                 alt="Escolares">
               <p class="mt-4 text-center text-gray-600">
                 Etiqueta cuadernos y útiles para identificar pertenencias.
@@ -256,7 +294,7 @@
             <!-- Uso: Impresoras Térmicas -->
             <div class="flex flex-col items-center col-span-2 p-6 rounded-lg shadow bg-gray-50">
               <h3 class="mb-2 text-xl font-semibold text-gray-800">Impresoras térmicas</h3>
-              <img class="object-contain w-40 rounded-sm " loading="lazy" src="../assets/img/termicas.png"
+              <img class="object-contain rounded-2xl w-80 " loading="lazy" src="../assets/img/termicas.png"
                 alt="Térmicas">
               <p class="mt-4 text-center text-gray-600">
                 Encuentra consumibles para impresoras térmicas en diversas formas y tamaños.
@@ -410,6 +448,55 @@
         </div>
       </section>
 
+      <!-- SECCIÓN COMENTARIOS -->
+<section class="py-2 bg-gray-50">
+  <div class="container px-4 mx-auto ">
+    <h2 class="my-4 text-3xl font-bold text-center text-yellow-400">Comentarios de mercado libre <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h2>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Comentario 1 -->
+      <div class="mx-auto">
+        <div class="overflow-hidden bg-gray-100 rounded-lg ">
+          <img src="../assets/img/Rating1MercadoLibre.PNG" alt="Comentario 1" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Comentario 2 -->
+      <div class="mx-auto">
+        <div class="overflow-hidden bg-gray-100 rounded-lg ">
+          <img src="../assets/img/Rating2MercadoLibre.PNG" alt="Comentario 2" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Comentario 3 -->
+      <div class="mx-auto">
+        <div class="overflow-hidden bg-gray-100 rounded-lg ">
+          <img src="../assets/img/Rating3MercadoLibre.PNG" alt="Comentario 3" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Comentario 4 -->
+      <div class="mx-auto">
+        <div class="overflow-hidden bg-gray-100 rounded-lg ">
+          <img src="../assets/img/Rating4MercadoLibre.PNG" alt="Comentario 4" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Comentario 5 -->
+      <div class="mx-auto">
+        <div class="overflow-hidden bg-gray-100 rounded-lg ">
+          <img src="../assets/img/Rating5MercadoLibre.PNG" alt="Comentario 5" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Comentario 6 -->
+      <div class="mx-auto">
+        <div class="overflow-hidden bg-gray-100 rounded-lg ">
+          <img src="../assets/img/Rating6MercadoLibre.PNG" alt="Comentario 6" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <!-- CONTACTO -->
       <section class="py-12 bg-white">
         <div class="container px-4 mx-auto">

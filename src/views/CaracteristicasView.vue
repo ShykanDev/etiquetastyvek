@@ -95,10 +95,10 @@
                 <img src="../assets/img/Elefantes.png" alt="" class="w-full">
             </div>
             <div class="p-6 bg-white rounded-lg shadow-md">
-                <img src="../assets/img/iso.png" alt="" class="w-full">
+                <img src="../assets/img/iso.png" alt="" class="w-40">
             </div>
             <div class="p-6 bg-white rounded-lg shadow-md">
-                <img src="../assets/img/Logo-Tyvek.png" alt="" class="w-full">
+                <img src="../assets/img/Logo-Tyvek.png" alt="" class="w-[380px]">
             </div>
         </div>
     </div>

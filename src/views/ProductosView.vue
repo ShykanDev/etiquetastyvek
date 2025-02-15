@@ -3,11 +3,11 @@
     <template #main>
       <section class="px-4 py-10 bg-gray-100">
         <section
-          :class="{ 'translate-x-0': isSidebarOpen, 'translate-x-[82%] bg-slate-900 bg-opacity-0': !isSidebarOpen }"
-          class="fixed md:top-[78px] top-48 transition-all duration-500 ease-out bottom-0 right-0 md:left-[70dvw] left-[15dvw] bg-slate-900 text-white font-poppins z-40 flex flex-col items-end justify-evenly ">
+          :class="{ 'translate-x-0': isSidebarOpen, 'translate-x-[80%] md:translate-x-[95%] bg-slate-900 bg-opacity-0': !isSidebarOpen }"
+          class="fixed md:top-[78px] top-48 transition-all duration-500 ease-out bottom-0 right-0 md:left-[76dvw] left-[15dvw] bg-slate-900 text-white font-poppins z-40 flex flex-col items-end justify-evenly ">
           <button @click="toggleSidebar"
-            :class="{ 'bg-white text-sky-900': isSidebarOpen, 'bg-sky-900 text-white': !isSidebarOpen }"
-            class="absolute p-1 rounded-md md:top-4 top-5 md:left-1 -left-1"><i v-if="isSidebarOpen"
+            :class="{ 'bg-white text-sky-900 md:left-1': isSidebarOpen, 'bg-sky-900 text-white md:-left-14': !isSidebarOpen }"
+            class="absolute p-1 transition-all duration-300 ease-in-out rounded-md md:top-4 top-5 -left-1"><i v-if="isSidebarOpen"
               class="fas fa-times"></i> <i v-else class="fas fa-bars animate-pulse"></i> {{ isSidebarOpen ? 'Cerrar' :
             'Abrir' }}</button>
           <a @click="delayedCloseSidebar" href="#EtiquetaCircularTyvek"
@@ -44,12 +44,13 @@
             medidas generales de las etiquetas, como colores y disponibilidad.</p>
 
           <div class="flex justify-center mb-8 space-x-4">
-            <a href="./comprar.html" class="px-6 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+            <!-- changing all anchors to RouterLink -->
+            <RouterLink to="/comprar" class="px-6 py-2 text-white bg-red-600 rounded hover:bg-red-700">
               <i class="mr-2 fas fa-shopping-cart"></i>Comprar
-            </a>
-            <a href="./comprar.html#formulario" class="px-6 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+            </RouterLink>
+            <RouterLink to="/contacto" class="px-6 py-2 text-white bg-red-600 rounded hover:bg-red-700">
               <i class="mr-2 fas fa-envelope"></i>Contacto
-            </a>
+            </RouterLink>
           </div>
 
           <hr class="mb-10">
@@ -68,16 +69,16 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <img loading="lazy" src="../assets/img/Caja3EtiquetasCirculares.png" alt="Etiqueta Circular"
-                  class="w-full" style="width: 200px;">
+                <img loading="lazy" src="../assets/img/Caja3EtiquetasCirculares.png"  alt="Etiqueta Circular"
+                  class="w-full" >
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
+                <RouterLink to="/comprar" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-shopping-cart"></i>Comprar
-                </a>
-                <a href="./caracteristicas.html" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+                </RouterLink>
+                <RouterLink to="/contacto" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-info-circle"></i>Saber más de la etiqueta
-                </a>
+                </RouterLink>
               </div>
             </div>
 
@@ -90,7 +91,12 @@
               <div class="md:col-span-1">
                 <h3 class="text-xl font-semibold">Colores Disponibles</h3>
                 <p class="mb-4">Blanco, Plata y Oro</p>
-                <img loading="lazy" src="../assets/img/colores-joyeria.png" alt="Colores Disponibles" class="w-full">
+                <!-- <img loading="lazy" src="../assets/img/colores-joyeria.png" alt="Colores Disponibles" class="w-full"> -->
+                 <div class="flex justify-between gap-2 md:justify-normal">
+                  <img src="../assets/img/WhiteSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-slate-400" alt="">
+                  <img src="../assets/img/SilverSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-white" alt="">
+                  <img src="../assets/img/GoldSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-yellow-400" alt="">
+                 </div>
               </div>
             </div>
 
@@ -127,16 +133,16 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <img loading="lazy" src="../assets/img/Caja3EtiquetasCuadradas.png" alt="Etiqueta Cuadrada"
-                  class="w-full" style="width: 200px;">
+                <img loading="lazy" src="../assets/img/Caja3EtiquetasCuadradas.png"  alt="Etiqueta Cuadrada"
+                  class="w-full" >
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
+                <RouterLink to="/comprar" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-shopping-cart"></i>Comprar
-                </a>
-                <a href="./caracteristicas.html" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+                </RouterLink>
+                <RouterLink to="/contacto" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-info-circle"></i>Saber más de la etiqueta
-                </a>
+                </RouterLink>
               </div>
             </div>
 
@@ -149,7 +155,11 @@
               <div class="md:col-span-1">
                 <h3 class="text-xl font-semibold">Colores Disponibles</h3>
                 <p class="mb-4">Blanco, Plata y Oro</p>
-                <img loading="lazy" src="../assets/img/colores-joyeria.png" alt="Colores Disponibles" class="w-full">
+               <div class="flex justify-between gap-2 md:justify-normal">
+                  <img src="../assets/img/WhiteSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-slate-400" alt="">
+                  <img src="../assets/img/SilverSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-white" alt="">
+                  <img src="../assets/img/GoldSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-yellow-400" alt="">
+                 </div>
               </div>
             </div>
 
@@ -186,16 +196,16 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <img loading="lazy" src="../assets/img/Caja3EtiquetasCola.png" alt="Etiqueta Cola de Rata"
-                  class="w-full" style="width: 200px;">
+                <img loading="lazy" src="../assets/img/Caja3EtiquetasCola.png"  alt="Etiqueta Cola de Rata"
+                  class="w-full" >
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
+                <RouterLink to="/comprar" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-shopping-cart"></i>Comprar
-                </a>
-                <a href="./caracteristicas.html" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+                </RouterLink>
+                <RouterLink to="/contacto" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-info-circle"></i>Saber más de la etiqueta
-                </a>
+                </RouterLink>
               </div>
             </div>
 
@@ -208,7 +218,11 @@
               <div class="md:col-span-1">
                 <h3 class="text-xl font-semibold">Colores Disponibles</h3>
                 <p class="mb-4">Blanco, Plata y Oro</p>
-                <img loading="lazy" src="../assets/img/colores-joyeria.png" alt="Colores Disponibles" class="w-full">
+               <div class="flex justify-between gap-2 md:justify-normal">
+                  <img src="../assets/img/WhiteSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-slate-400" alt="">
+                  <img src="../assets/img/SilverSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-white" alt="">
+                  <img src="../assets/img/GoldSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-yellow-400" alt="">
+                 </div>
               </div>
             </div>
 
@@ -246,15 +260,15 @@
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
                 <img loading="lazy" src="../assets/img/CajaColganteCircular.png" alt="Etiqueta Colgante Circular"
-                  class="w-full" style="width: 200px;">
+                  class="w-3/4">
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
+                <RouterLink to="/comprar" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-shopping-cart"></i>Comprar
-                </a>
-                <a href="./comprar.html#formulario" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+                </RouterLink>
+                <RouterLink to="/contacto" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-envelope"></i>Saber más de la etiqueta
-                </a>
+                </RouterLink>
               </div>
             </div>
 
@@ -305,15 +319,15 @@
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
                 <img loading="lazy" src="../assets/img/CajaColganteCuadrado.png" alt="Etiqueta Colgante Cuadrada"
-                  class="w-full" style="width: 200px;">
+                  class="w-3/4">
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
+                <RouterLink to="/comprar" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-shopping-cart"></i>Comprar
-                </a>
-                <a href="./comprar.html#formulario" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+                </RouterLink>
+                <RouterLink to="/contacto" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-envelope"></i>Saber más de la etiqueta
-                </a>
+                </RouterLink>
               </div>
             </div>
 
@@ -364,15 +378,15 @@
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
                 <img loading="lazy" src="../assets/img/CajaColganteRectangulo.png" alt="Etiqueta Colgante Rectangular"
-                  class="w-full" style="width: 200px;">
+                  class="w-3/4">
               </div>
               <div class="flex flex-col items-center justify-center gap-9">
-                <a href="./comprar.html" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
+                <RouterLink to="/comprar" class="px-4 py-2 mb-4 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-shopping-cart"></i>Comprar
-                </a>
-                <a href="./comprar.html#formulario" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+                </RouterLink>
+                <RouterLink to="/contacto" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
                   <i class="mr-2 fas fa-envelope"></i>Saber más de la etiqueta
-                </a>
+                </RouterLink>
               </div>
             </div>
 
@@ -426,15 +440,16 @@
                 <!-- Imágen Producto -->
                 <div class="text-center">
                   <img loading="lazy" src="../assets/img/CajaEtiquetaAdhesicaCircular.png" alt=""
-                    class="mx-auto w-[200px]">
+                    class="w-3/4 mx-auto">
                 </div>
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html"
-                  class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">Comprar</a>
-                <a href="./comprar.html#formulario"
-                  class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">Saber más de la
-                  etiqueta</a>
+                <RouterLink to="/comprar" class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">
+                  <i class="mr-2 fas fa-shopping-cart"></i>Comprar
+                </RouterLink>
+                <RouterLink to="/contacto" class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">
+                  <i class="mr-2 fas fa-envelope"></i>Saber más de la etiqueta
+                </RouterLink>
               </div>
             </div>
 
@@ -507,19 +522,23 @@
                 <!-- Imágen Producto -->
                 <div class="text-center">
                   <img loading="lazy" src="../assets/img/CajaEtiquetasAdhesivasCuadradas.png" alt=""
-                    class="mx-auto w-[200px]">
+                    class="w-3/4 mx-auto">
                 </div>
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html"
-                  class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">Comprar</a>
-                <a href="./comprar.html#formulario"
-                  class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">Saber más de la
-                  etiqueta</a>
+                <RouterLink to="/comprar" class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">
+                  <i class="mr-2 fas fa-shopping-cart"></i>Comprar
+                </RouterLink>
+                <RouterLink to="/contacto"
+                  class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">
+                  <i class="mr-2 fas fa-envelope"></i>Saber más de la etiqueta
+                </RouterLink>
               </div>
+            </div>
             </div>
 
             <div class="flex items-center mt-6">
+              <div class="w-2/3">
               <div class="w-2/3">
                 <!-- Medidas etiqueta -->
                 <div class="tamanio-adhesivo">
@@ -584,15 +603,17 @@
                 <!-- Imágen Producto -->
                 <div class="text-center">
                   <img loading="lazy" src="../assets/img/CajaEtiquetaAdhesivaRectangulo.png" alt=""
-                    class="mx-auto w-[200px]">
+                    class="w-3/4 mx-auto">
                 </div>
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html"
-                  class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">Comprar</a>
-                <a href="./comprar.html#formulario"
-                  class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">Saber más de la
-                  etiqueta</a>
+                <RouterLink to="/comprar" class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">
+                  <i class="mr-2 fas fa-shopping-cart"></i>Comprar
+                </RouterLink>
+                <RouterLink to="/contacto"
+                  class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">
+                  <i class="mr-2 fas fa-envelope"></i>Saber más de la etiqueta
+                </RouterLink>
               </div>
             </div>
             <div class="flex flex-wrap divide-x divide-gray-300">
@@ -669,15 +690,17 @@
               <div class="w-2/3">
                 <!-- Imágen Producto -->
                 <div class="text-center">
-                  <img loading="lazy" src="../assets/img/CajaEtiquetasRollo.png" alt="" class="mx-auto">
+                  <img loading="lazy" src="../assets/img/CajaEtiquetasRollo.png" alt="" class="w-full mx-auto">
                 </div>
               </div>
               <div class="flex flex-col items-center justify-center gap-3">
-                <a href="./comprar.html"
-                  class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">Comprar</a>
-                <a href="./comprar.html#formulario"
-                  class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">Saber más de la
-                  etiqueta</a>
+                <RouterLink to="/comprar" class="px-4 py-2 text-white bg-blue-500 rounded btn-general hover:bg-blue-600">
+                  <i class="mr-2 fas fa-shopping-cart"></i>Comprar
+                </RouterLink>
+                <RouterLink to="/contacto"
+                  class="px-4 py-2 mt-2 text-white bg-green-500 rounded btn-general hover:bg-green-600">
+                  <i class="mr-2 fas fa-envelope"></i>Saber más de la etiqueta
+                </RouterLink>
               </div>
             </div>
 
@@ -716,7 +739,11 @@
                   <h3 class="text-xl font-semibold text-gray-600">Colores Disponibles</h3>
                   <div class="mt-4 text-center">
                     <p class="text-gray-700">Blanco, Plato y Oro</p>
-                    <img loading="lazy" src="../assets/img/colores-joyeria.png" alt="" class="mx-auto">
+                    <div class="flex justify-between gap-2 md:justify-normal">
+                      <img src="../assets/img/WhiteSquare.jpg" class="md:w-[100px] w-28 rounded-full border border-slate-400" alt="">
+                      <img src="../assets/img/SilverSquare.jpg" class="md:w-[100px] w-28 rounded-full border border-white" alt="">
+                      <img src="../assets/img/GoldSquare.jpg" class="md:w-[100px] w-28 rounded-full border border-yellow-400" alt="">
+                     </div>
                   </div>
                 </div>
               </div>
