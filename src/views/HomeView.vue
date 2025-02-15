@@ -10,8 +10,8 @@
               <!-- Se muestra en mobile -->
               <img class="block w-32 my-4" loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Logo Tyvek">
               <!-- <div class="flex flex-col items-start gap-4"> -->
-              <!-- <img src="../assets/img/4_7StarsMercadoLibreRating.PNG" class="border rounded-xl border-sky-700" alt=""> -->
-              <!-- <img src="../assets/img/4_7StarsMercadoLibreRating.PNG" class="border rounded-xl border-emerald-400" alt=""> -->
+              <!-- <img src="../assets/img/4_7StarsMercadoLibreRating.png" class="border rounded-xl border-sky-700" alt=""> -->
+              <!-- <img src="../assets/img/4_7StarsMercadoLibreRating.png" class="border rounded-xl border-emerald-400" alt=""> -->
             </div>
 
             <h1 class="mt-4 text-4xl font-bold text-gray-900">
@@ -24,8 +24,8 @@
               alt="Elefantes">
               <!-- Mercado libre -->
             <div class="flex items-center gap-4 mt-5">
-              <img src="../assets/img/4_7StarsMercadoLibreRating.PNG" class="border rounded-xl border-sky-700" alt="">
-              <img src="../assets/img/MercadoLiderCapture.PNG" class="border rounded-xl border-emerald-400 animate-fade-down" alt="">
+              <img src="../assets/img/4_7StarsMercadoLibreRating.png" class="border rounded-xl border-sky-700" alt="">
+              <img src="../assets/img/MercadoLiderCapture.png" class="border rounded-xl border-emerald-400 animate-fade-down" alt="">
             </div>
           </div>
           <!-- Imagen de fondo -->
@@ -456,42 +456,42 @@
       <!-- Comentario 1 -->
       <div class="mx-auto">
         <div class="overflow-hidden bg-gray-100 rounded-lg ">
-          <img src="../assets/img/Rating1MercadoLibre.PNG" alt="Comentario 1" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+          <img src="../assets/img/Rating1MercadoLibre.png" alt="Comentario 1" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
         </div>
       </div>
 
       <!-- Comentario 2 -->
       <div class="mx-auto">
         <div class="overflow-hidden bg-gray-100 rounded-lg ">
-          <img src="../assets/img/Rating2MercadoLibre.PNG" alt="Comentario 2" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+          <img src="../assets/img/Rating2MercadoLibre.png" alt="Comentario 2" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
         </div>
       </div>
 
       <!-- Comentario 3 -->
       <div class="mx-auto">
         <div class="overflow-hidden bg-gray-100 rounded-lg ">
-          <img src="../assets/img/Rating3MercadoLibre.PNG" alt="Comentario 3" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+          <img src="../assets/img/Rating3MercadoLibre.png" alt="Comentario 3" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
         </div>
       </div>
 
       <!-- Comentario 4 -->
       <div class="mx-auto">
         <div class="overflow-hidden bg-gray-100 rounded-lg ">
-          <img src="../assets/img/Rating4MercadoLibre.PNG" alt="Comentario 4" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+          <img src="../assets/img/Rating4MercadoLibre.png" alt="Comentario 4" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
         </div>
       </div>
 
       <!-- Comentario 5 -->
       <div class="mx-auto">
         <div class="overflow-hidden bg-gray-100 rounded-lg ">
-          <img src="../assets/img/Rating5MercadoLibre.PNG" alt="Comentario 5" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+          <img src="../assets/img/Rating5MercadoLibre.png" alt="Comentario 5" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
         </div>
       </div>
 
       <!-- Comentario 6 -->
       <div class="mx-auto">
         <div class="overflow-hidden bg-gray-100 rounded-lg ">
-          <img src="../assets/img/Rating6MercadoLibre.PNG" alt="Comentario 6" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
+          <img src="../assets/img/Rating6MercadoLibre.png" alt="Comentario 6" class="object-cover w-full h-full rounded-lg hover:border border-sky-600" loading="lazy">
         </div>
       </div>
     </div>
