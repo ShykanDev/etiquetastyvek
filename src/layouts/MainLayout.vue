@@ -13,8 +13,7 @@
           <img src="../assets/img/sslLogoV3.png" class="w-7" alt="">
           <RouterLink translate="no" :to="{ name: 'home' }" class="text-lg font-bold"><span v-html="currentDomain"></span></RouterLink>
         </div>
-
-      </div>
+</div>
       <div class="flex flex-wrap md:space-x-2 text-lg lg:flex-nowrap md:mr-28 md:flex justify-evenly md:justify-normal   md:flex-wrap ">
         <RouterLink  :to="{ name: 'home' }"
           class="flex items-center p-2 text-base hover:text-sky-900 animate-delay-0 animate-fade-down hover:bg-white hover:rounded-md ">
