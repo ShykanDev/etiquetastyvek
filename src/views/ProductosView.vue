@@ -4,38 +4,38 @@
       <section class="px-4 py-10 bg-gray-100">
         <section
           :class="{ 'translate-x-0': isSidebarOpen, 'translate-x-[80%] md:translate-x-[95%] bg-slate-900 bg-opacity-0': !isSidebarOpen }"
-          class="fixed md:top-[78px] top-48 transition-all duration-500 ease-out bottom-0 right-0 md:left-[76dvw] left-[15dvw] bg-slate-900 text-white font-poppins z-40 flex flex-col items-end justify-evenly ">
+          class="fixed md:top-[78px] top-48 transition-all duration-500 ease-out bottom-0 right-0 md:left-[84dvw] left-[18dvw] bg-slate-900 bg-opacity-35 text-white font-poppins z-40 flex flex-col items-center py-3 justify-evenly ">
           <button @click="toggleSidebar"
             :class="{ 'bg-white text-sky-900 md:left-1': isSidebarOpen, 'bg-sky-900 text-white md:-left-14': !isSidebarOpen }"
             class="absolute p-1 transition-all duration-300 ease-in-out rounded-md md:top-4 top-5 -left-1"><i v-if="isSidebarOpen"
               class="fas fa-times"></i> <i v-else class="fas fa-bars animate-pulse"></i> {{ isSidebarOpen ? 'Cerrar' :
             'Abrir' }}</button>
           <a @click="delayedCloseSidebar" href="#EtiquetaCircularTyvek"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Circular Tyvek</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaCuadradaTyvek"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Cuadrada Tyvek</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaColadeRataTyvek"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Cola de Rata Tyvek</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaColganteCircular"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Colgante Circular</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaColganteCuadrada"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Colgante Cuadrada</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaColganteRectangular"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Colgante Rectangular</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaAdhesivaCircular"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Adhesiva Circular</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaAdhesivaCuadrada"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Adhesiva Cuadrada</a>
           <a @click="delayedCloseSidebar" href="#EtiquetaAdhesivaRectangular"
-            class="p-2 text-white hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
+            class="p-2  bg-white/80 text-sky-800 hover:bg-white hover:text-sky-900 rounded-2xl"><i class="mr-2 fas fa-circle"></i>
             Etiqueta Adhesiva Rectangular</a>
         </section>
         <div class="container mx-auto ">
