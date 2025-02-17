@@ -5,7 +5,7 @@
     <div class="container mx-auto">
         <div class="flex flex-col items-center mb-8">
             <h2 class="text-3xl font-bold text-center">Etiquetas hechas con Tyvek de Dupont</h2>
-            <img src="../assets/img/Logo-Tyvek.png" alt="Tyvek" class="w-24 mt-4">
+            <img src="../assets/img/Logo-Tyvek.png" alt="Tyvek" class="w-60 mt-4">
         </div>
         <p class="mb-10 text-center text-gray-600">Etiquetas de excelente material y con características únicas que crean la diferencia entre una etiqueta común a una de Tyvek de Dupont.</p>
 

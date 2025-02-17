@@ -3,8 +3,8 @@
     <template #main>
       <section class="px-4 py-10 bg-gray-100">
         <section
-          :class="{ 'translate-x-0': isSidebarOpen, 'translate-x-[80%] md:translate-x-[95%] bg-slate-900 bg-opacity-0': !isSidebarOpen }"
-          class="fixed md:top-[78px] top-48 transition-all duration-500 ease-out bottom-0 right-0 md:left-[84dvw] left-[18dvw] bg-slate-900 bg-opacity-35 text-white font-poppins z-40 flex flex-col items-center py-3 justify-evenly ">
+          :class="{ 'translate-x-0 overflow-x-scroll': isSidebarOpen, 'translate-x-[57%] md:translate-x-[95%] bg-slate-900 bg-opacity-0': !isSidebarOpen }"
+          class="fixed md:top-[78px] top-48 transition-all duration-500 ease-out bottom-0 right-0 md:left-[84dvw] left-[0dvw] bg-slate-900 bg-opacity-35 text-white font-poppins z-40 md:flex flex-col items-center py-3 justify-evenly hidden">
           <button @click="toggleSidebar"
             :class="{ 'bg-white text-sky-900 md:left-1': isSidebarOpen, 'bg-sky-900 text-white md:-left-14': !isSidebarOpen }"
             class="absolute p-1 transition-all duration-300 ease-in-out rounded-md md:top-4 top-5 -left-1"><i v-if="isSidebarOpen"
@@ -59,11 +59,11 @@
           <div id="EtiquetaCircularTyvek" class="mb-10 animate-fade-down scroll-mt-28">
             <div class="flex items-center justify-between">
               <div>
-                <h2 class="text-2xl font-bold">Etiquetas Joyería Tyvek de Dupont</h2>
-                <h3 class="text-xl font-semibold">Etiqueta Circular para Joyería Tyvek</h3>
+                <h2 class="text-4xl font-bold text-sky-800">Etiquetas Joyería Tyvek de Dupont</h2>
+                <h3 class="text-xl font-semibold text-slate-800">Etiqueta Circular para Joyería Tyvek</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-48 border border-sky-800 p-3 rounded-3xl ">
               </div>
             </div>
 
@@ -84,12 +84,12 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Dimensiones de la etiqueta</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Dimensiones de la etiqueta</h3>
                 <img loading="lazy" src="../assets/img/EtiquetaCircularTamanio.png" alt="Tamaño de la Etiqueta Circular"
                   class="w-full">
               </div>
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Colores Disponibles</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Colores Disponibles</h3>
                 <p class="mb-4">Blanco, Plata y Oro</p>
                 <!-- <img loading="lazy" src="../assets/img/colores-joyeria.png" alt="Colores Disponibles" class="w-full"> -->
                  <div class="flex justify-between gap-2 md:justify-normal">
@@ -101,7 +101,7 @@
             </div>
 
             <div class="mt-6">
-              <h2 class="mb-4 text-2xl font-bold text-center">Características generales de la etiqueta</h2>
+              <h2 class="mb-4 text-4xl font-bold text-sky-800 text-center">Características generales de la etiqueta</h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="md:col-span-1">
                   <p><i class="mr-2 fas fa-check-circle"></i>Hecha de Tyvek de Dupont</p>
@@ -123,11 +123,11 @@
           <div id="EtiquetaCuadradaTyvek" class="mb-10 scroll-mt-28">
             <div class="flex items-center justify-between">
               <div>
-                <h2 class="text-2xl font-bold">Etiquetas Joyería Tyvek de Dupont</h2>
-                <h3 class="text-xl font-semibold">Etiqueta Cuadrada para Joyería Tyvek</h3>
+                <h2 class="text-4xl font-bold text-sky-800">Etiquetas Joyería Tyvek de Dupont</h2>
+                <h3 class="text-xl font-semibold text-slate-800">Etiqueta Cuadrada para Joyería Tyvek</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-48 border border-sky-800 p-3 rounded-3xl">
               </div>
             </div>
 
@@ -148,12 +148,12 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Dimensiones de la etiqueta</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Dimensiones de la etiqueta</h3>
                 <img loading="lazy" src="../assets/img/EtiquetaCuadradaTamanio.png" alt="Tamaño de la Etiqueta Cuadrada"
                   class="w-full">
               </div>
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Colores Disponibles</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Colores Disponibles</h3>
                 <p class="mb-4">Blanco, Plata y Oro</p>
                <div class="flex justify-between gap-2 md:justify-normal">
                   <img src="../assets/img/WhiteSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-slate-400" alt="">
@@ -164,7 +164,7 @@
             </div>
 
             <div class="mt-6">
-              <h2 class="mb-4 text-2xl font-bold text-center">Características generales de la etiqueta</h2>
+              <h2 class="mb-4 text-4xl font-bold text-sky-800 text-center">Características generales de la etiqueta</h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="md:col-span-1">
                   <p><i class="mr-2 fas fa-check-circle"></i>Hecha de Tyvek de Dupont</p>
@@ -186,11 +186,11 @@
           <div id="EtiquetaColadeRataTyvek" class="mb-10 scroll-mt-28">
             <div class="flex items-center justify-between">
               <div>
-                <h2 class="text-2xl font-bold">Etiquetas Joyería Tyvek de Dupont</h2>
-                <h3 class="text-xl font-semibold">Etiqueta Cola de Rata para Joyería Tyvek</h3>
+                <h2 class="text-4xl font-bold text-sky-800">Etiquetas Joyería Tyvek de Dupont</h2>
+                <h3 class="text-xl font-semibold text-slate-800">Etiqueta Cola de Rata para Joyería Tyvek</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-48 border border-sky-800 p-3 rounded-3xl ">
               </div>
             </div>
 
@@ -211,14 +211,14 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Dimensiones de la etiqueta</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Dimensiones de la etiqueta</h3>
                 <img loading="lazy" src="../assets/img/EtiqeutaColaTamanio.png" alt="Tamaño de la Etiqueta Cola de Rata"
                   class="w-full">
               </div>
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Colores Disponibles</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Colores Disponibles</h3>
                 <p class="mb-4">Blanco, Plata y Oro</p>
-               <div class="flex justify-between gap-2 md:justify-normal">
+               <div class="flex justify-between gap-2 md:justify-normal flex-wrap">
                   <img src="../assets/img/WhiteSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-slate-400" alt="">
                   <img src="../assets/img/SilverSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-white" alt="">
                   <img src="../assets/img/GoldSquare.jpg" class="md:w-[200px] w-28 rounded-full border border-yellow-400" alt="">
@@ -227,7 +227,7 @@
             </div>
 
             <div class="mt-6">
-              <h2 class="mb-4 text-2xl font-bold text-center">Características generales de la etiqueta</h2>
+              <h2 class="mb-4 text-4xl font-bold text-sky-800 text-center">Características generales de la etiqueta</h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="md:col-span-1">
                   <p><i class="mr-2 fas fa-check-circle"></i>Hecha de Tyvek de Dupont</p>
@@ -249,11 +249,11 @@
           <div id="EtiquetaColganteCircular" class="mb-10 scroll-mt-28">
             <div class="flex items-center justify-between">
               <div>
-                <h2 class="text-2xl font-bold">Etiquetas Colgantes</h2>
-                <h3 class="text-xl font-semibold">Etiqueta Colgante Circular</h3>
+                <h2 class="text-4xl font-bold text-sky-800">Etiquetas Colgantes</h2>
+                <h3 class="text-xl font-semibold text-slate-800">Etiqueta Colgante Circular</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-48 border border-sky-800 p-3 rounded-3xl ">
               </div>
             </div>
 
@@ -274,19 +274,19 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Dimensiones de la etiqueta</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Dimensiones de la etiqueta</h3>
                 <img loading="lazy" src="../assets/img/EtiquetaColganteTamanio2.png"
                   alt="Tamaño de la Etiqueta Colgante Circular" class="w-full">
               </div>
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Colores Disponibles</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Colores Disponibles</h3>
                 <p class="mb-4">Verde, Rojo, Azul, Blanco y Amarillo</p>
                 <img loading="lazy" src="../assets/img/colores-primarios.png" alt="Colores Disponibles" class="w-full">
               </div>
             </div>
 
             <div class="mt-6">
-              <h2 class="mb-4 text-2xl font-bold text-center">Características generales de la etiqueta</h2>
+              <h2 class="mb-4 text-4xl font-bold text-sky-800 text-center">Características generales de la etiqueta</h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="md:col-span-1">
                   <p><i class="mr-2 fas fa-check-circle"></i>Hecha de papel y también disponibles en cartulina.</p>
@@ -308,11 +308,11 @@
           <div id="EtiquetaColganteCuadrada" class="mb-10 scroll-mt-28">
             <div class="flex items-center justify-between">
               <div>
-                <h2 class="text-2xl font-bold">Etiquetas Colgantes</h2>
-                <h3 class="text-xl font-semibold">Etiqueta Colgante Cuadrada</h3>
+                <h2 class="text-4xl font-bold text-sky-800">Etiquetas Colgantes</h2>
+                <h3 class="text-xl font-semibold text-slate-800">Etiqueta Colgante Cuadrada</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-48 border border-sky-800 p-3 rounded-3xl ">
               </div>
             </div>
 
@@ -333,19 +333,19 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Dimensiones de la etiqueta</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Dimensiones de la etiqueta</h3>
                 <img loading="lazy" src="../assets/img/EtiquetaColganteTamanio3.png"
                   alt="Tamaño de la Etiqueta Colgante Cuadrada" class="w-full">
               </div>
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Colores Disponibles</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Colores Disponibles</h3>
                 <p class="mb-4">Verde, Rojo, Azul, Blanco y Amarillo</p>
                 <img loading="lazy" src="../assets/img/colores-primarios.png" alt="Colores Disponibles" class="w-full">
               </div>
             </div>
 
             <div class="mt-6">
-              <h2 class="mb-4 text-2xl font-bold text-center">Características generales de la etiqueta</h2>
+              <h2 class="mb-4 text-4xl font-bold text-sky-800 text-center">Características generales de la etiqueta</h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="md:col-span-1">
                   <p><i class="mr-2 fas fa-check-circle"></i>Hecha de papel y también disponibles en cartulina.</p>
@@ -367,11 +367,11 @@
           <div id="EtiquetaColganteRectangular" class="mb-10 scroll-mt-28">
             <div class="flex items-center justify-between">
               <div>
-                <h2 class="text-2xl font-bold">Etiquetas Colgantes</h2>
-                <h3 class="text-xl font-semibold">Etiqueta Colgante Rectangular</h3>
+                <h2 class="text-4xl font-bold text-sky-800">Etiquetas Colgantes</h2>
+                <h3 class="text-xl font-semibold text-slate-800">Etiqueta Colgante Rectangular</h3>
               </div>
               <div>
-                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-36">
+                <img loading="lazy" src="../assets/img/Logo-Tyvek.png" alt="Tyvek Logo" class="w-48 border border-sky-800 p-3 rounded-3xl ">
               </div>
             </div>
 
@@ -392,19 +392,19 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 md:grid-cols-2">
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Dimensiones de la etiqueta</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Dimensiones de la etiqueta</h3>
                 <img loading="lazy" src="../assets/img/EtiquetaColganteTamanio1.png"
                   alt="Tamaño de la Etiqueta Colgante Rectangular" class="w-full">
               </div>
               <div class="md:col-span-1">
-                <h3 class="text-xl font-semibold">Colores Disponibles</h3>
+                <h3 class="text-xl font-semibold text-slate-800">Colores Disponibles</h3>
                 <p class="mb-4">Verde, Rojo, Azul, Blanco y Amarillo</p>
                 <img loading="lazy" src="../assets/img/colores-primarios.png" alt="Colores Disponibles" class="w-full">
               </div>
             </div>
 
             <div class="mt-6">
-              <h2 class="mb-4 text-2xl font-bold text-center">Características generales de la etiqueta</h2>
+              <h2 class="mb-4 text-4xl font-bold text-sky-800 text-center">Características generales de la etiqueta</h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="md:col-span-1">
                   <p><i class="mr-2 fas fa-check-circle"></i>Hecha de papel y también disponibles en cartulina.</p>
@@ -427,8 +427,8 @@
             class="p-6 mb-8 bg-white rounded-lg shadow-lg etiquetas-tyvek scroll-mt-28">
             <div class="flex items-center">
               <div class="w-4/5">
-                <h2 class="text-2xl font-bold text-gray-800">Etiquetas Adhesivas</h2>
-                <h3 class="text-xl font-semibold text-gray-600">Etiqueta Adhesiva Circular</h3>
+                <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Etiquetas Adhesivas</h2>
+                <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Etiqueta Adhesiva Circular</h3>
               </div>
               <div class="w-1/5 text-right">
                 <i class="text-3xl text-gray-500 fas fa-sticky-note"></i>
@@ -457,7 +457,7 @@
               <div class="w-2/3">
                 <!-- Medidas etiqueta -->
                 <div class="tamanio-adhesivo">
-                  <h3 class="text-xl font-semibold text-gray-600">Dimensiones de la etiqueta</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Dimensiones de la etiqueta</h3>
                   <div class="flex">
                     <div class="w-1/3">
                       <p class="text-gray-700">13mm</p>
@@ -476,7 +476,7 @@
               </div>
               <div class="w-1/3">
                 <div class="tamanio-primarios">
-                  <h3 class="text-xl font-semibold text-gray-600">Colores Disponibles</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Colores Disponibles</h3>
                   <div class="text-center">
                     <p class="text-gray-700">Verde, Rojo, Azul, Blanco y Amarillo</p>
                     <img loading="lazy" src="../assets/img/colores-primarios.png" alt="" class="mx-auto">
@@ -486,7 +486,7 @@
             </div>
 
             <div class="mt-6 text-center">
-              <h2 class="text-2xl font-bold text-gray-800">Caracteristicas generales de la etiqueta</h2>
+              <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Caracteristicas generales de la etiqueta</h2>
               <div class="flex mt-4">
                 <div class="w-1/2">
                   <p class="text-gray-700">Hecha de papel grueso.</p>
@@ -509,8 +509,8 @@
             class="p-6 mb-8 bg-white rounded-lg shadow-lg etiquetas-tyvek scroll-mt-28">
             <div class="flex items-center">
               <div class="w-4/5">
-                <h2 class="text-2xl font-bold text-gray-800">Etiquetas Adhesivas</h2>
-                <h3 class="text-xl font-semibold text-gray-600">Etiqueta Adhesiva Cuadrada</h3>
+                <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Etiquetas Adhesivas</h2>
+                <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Etiqueta Adhesiva Cuadrada</h3>
               </div>
               <div class="w-1/5 text-right">
                 <i class="text-3xl text-gray-500 fas fa-square-full"></i>
@@ -542,7 +542,7 @@
               <div class="w-2/3">
                 <!-- Medidas etiqueta -->
                 <div class="tamanio-adhesivo">
-                  <h3 class="text-xl font-semibold text-gray-600">Dimensiones de la etiqueta</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Dimensiones de la etiqueta</h3>
                   <div class="flex">
                     <div class="w-1/3">
                       <p class="text-gray-700">17x17mm</p>
@@ -557,7 +557,7 @@
               </div>
               <div class="w-1/3">
                 <div class="tamanio-primarios">
-                  <h3 class="text-xl font-semibold text-gray-600">Colores Disponibles</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Colores Disponibles</h3>
                   <div class="text-center">
                     <p class="text-gray-700">Verde, Rojo, Azul, Blanco y Amarillo</p>
                     <img loading="lazy" src="../assets/img/colores-primarios.png" alt="" class="mx-auto">
@@ -567,7 +567,7 @@
             </div>
 
             <div class="mt-6 text-center">
-              <h2 class="text-2xl font-bold text-gray-800">Caracteristicas generales de la etiqueta</h2>
+              <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Caracteristicas generales de la etiqueta</h2>
               <div class="flex mt-4">
                 <div class="w-1/2">
                   <p class="text-gray-700">Hecha de papel grueso.</p>
@@ -590,8 +590,8 @@
             class="p-6 mb-8 bg-white rounded-lg shadow-lg etiquetas-tyvek scroll-mt-28">
             <div class="flex items-center">
               <div class="w-4/5">
-                <h2 class="text-2xl font-bold text-gray-800">Etiquetas Adhesivas</h2>
-                <h3 class="text-xl font-semibold text-gray-600">Etiqueta Adhesiva Rectangular</h3>
+                <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Etiquetas Adhesivas</h2>
+                <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Etiqueta Adhesiva Rectangular</h3>
               </div>
               <div class="w-1/5 text-right">
                 <i class="text-3xl text-gray-500 fas fa-rectangle-wide"></i>
@@ -620,7 +620,7 @@
               <div class="w-2/3 p-6">
                 <!-- Medidas etiqueta -->
                 <div class="tamanio-adhesivo">
-                  <h3 class="text-xl font-semibold text-gray-600">Dimensiones de la etiqueta</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Dimensiones de la etiqueta</h3>
                   <div class="flex flex-wrap mt-4">
                     <div class="w-1/3 pr-4">
                       <p class="text-gray-700">9x13mm</p>
@@ -648,7 +648,7 @@
               </div>
               <div class="w-1/3 p-6">
                 <div class="tamanio-primarios">
-                  <h3 class="text-xl font-semibold text-gray-600">Colores Disponibles</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Colores Disponibles</h3>
                   <div class="mt-4 text-center">
                     <p class="text-gray-700">Verde, Rojo, Azul, Blanco y Amarillo</p>
                     <img loading="lazy" src="../assets/img/colores-primarios.png" alt="" class="mx-auto">
@@ -658,7 +658,7 @@
             </div>
 
             <div class="mt-8 text-center font-poppins">
-              <h2 class="text-2xl font-bold text-gray-800">Caracteristicas generales de la etiqueta</h2>
+              <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Caracteristicas generales de la etiqueta</h2>
               <div class="flex flex-wrap mt-4">
                 <div class="w-1/2 p-4">
                   <p class="text-gray-700">Hecha de papel grueso.</p>
@@ -678,8 +678,8 @@
           <div id="EtiquetaTermica" class="p-6 mb-8 bg-white rounded-lg shadow-lg etiquetas-tyvek scroll-mt-28">
             <div class="flex items-center">
               <div class="w-4/5">
-                <h2 class="text-2xl font-bold text-gray-800">Etiquetas Térmicas</h2>
-                <h3 class="text-xl font-semibold text-gray-600">Etiqueta Térmica para diferentes impresoras</h3>
+                <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Etiquetas Térmicas</h2>
+                <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Etiqueta Térmica para diferentes impresoras</h3>
               </div>
               <div class="w-1/5 text-right">
                 <i class="text-3xl text-gray-500 fas fa-temperature-high"></i>
@@ -708,7 +708,7 @@
               <div class="w-2/3">
                 <!-- Medidas etiqueta -->
                 <div class="tamanio-adhesivo">
-                  <h3 class="text-xl font-semibold text-gray-600">Dimensiones de la etiqueta</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Dimensiones de la etiqueta</h3>
                   <div class="flex flex-wrap mt-4">
                     <div class="w-1/3 pr-4">
                       <p class="text-gray-700">9x13mm</p>
@@ -736,10 +736,10 @@
               </div>
               <div class="w-1/3">
                 <div class="tamanio">
-                  <h3 class="text-xl font-semibold text-gray-600">Colores Disponibles</h3>
+                  <h3 class="text-xl font-semibold text-slate-800 text-gray-600">Colores Disponibles</h3>
                   <div class="mt-4 text-center">
                     <p class="text-gray-700">Blanco, Plato y Oro</p>
-                    <div class="flex justify-between gap-2 md:justify-normal">
+                    <div class="flex justify-between gap-2 md:justify-normal  flex-wrap">
                       <img src="../assets/img/WhiteSquare.jpg" class="md:w-[100px] w-28 rounded-full border border-slate-400" alt="">
                       <img src="../assets/img/SilverSquare.jpg" class="md:w-[100px] w-28 rounded-full border border-white" alt="">
                       <img src="../assets/img/GoldSquare.jpg" class="md:w-[100px] w-28 rounded-full border border-yellow-400" alt="">
@@ -750,7 +750,7 @@
             </div>
 
             <div class="mt-8 text-center">
-              <h2 class="text-2xl font-bold text-gray-800">Caracteristicas generales de la etiqueta</h2>
+              <h2 class="text-4xl font-bold text-sky-800 text-gray-800">Caracteristicas generales de la etiqueta</h2>
               <div class="flex flex-wrap mt-4">
                 <div class="w-1/2 p-4">
                   <p class="text-gray-700">Hecha de papel grueso.</p>
